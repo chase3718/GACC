@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ItemManager" project="ItemManager" tests="6" started="6" failures="0" errors="1" ignored="0">
+  <testsuite name="com.itemmanager.ItemTests" time="0.677">
+    <testcase name="testItemGetAll" classname="com.itemmanager.ItemTests" time="0.454"/>
+    <testcase name="testItemUpdate" classname="com.itemmanager.ItemTests" time="0.077"/>
+    <testcase name="testItemGet" classname="com.itemmanager.ItemTests" time="0.146"/>
+  </testsuite>
+  <testsuite name="com.itemmanager.ItemManagerApplicationTests" time="0.164">
+    <testcase name="contextLoads" classname="com.itemmanager.ItemManagerApplicationTests" time="0.164"/>
+  </testsuite>
+  <testsuite name="com.itemmanager.ItemJsonTests" time="0.011">
+    <testcase name="serializeItemJsonTest" classname="com.itemmanager.ItemJsonTests" time="0.011">
+      <error>java.lang.IllegalStateException: Failed to retrieve PlatformTransactionManager for @Transactional test: [DefaultTestContext@f48a080 testClass = ItemJsonTests, testInstance = com.itemmanager.ItemJsonTests@5f7cd50e, testMethod = serializeItemJsonTest@ItemJsonTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@401ec794 testClass = ItemJsonTests, locations = '{}', classes = '{class com.itemmanager.ItemManagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.json.JsonTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@d76099a key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.test.autoconfigure.json.JsonTestersAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@185d8b6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@210366b4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@1fa268de, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@21fecdb9, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4dc73142, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@a7e666], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]&#13;
+	at org.springframework.util.Assert.state(Assert.java:94)&#13;
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:185)&#13;
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:291)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)&#13;
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.itemmanager.ItemRepoTests" time="0.098">
+    <testcase name="findByItemNameShouldReturnItem" classname="com.itemmanager.ItemRepoTests" time="0.098"/>
+  </testsuite>
+</testrun>

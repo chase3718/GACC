@@ -1,0 +1,5 @@
+package com.itemmanager.db;
+
+public class ItemRepository {
+
+}

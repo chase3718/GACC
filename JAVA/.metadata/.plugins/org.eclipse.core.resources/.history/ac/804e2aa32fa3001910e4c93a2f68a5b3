@@ -1,0 +1,9 @@
+package com.itemmanager.db;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.itemmanager.business.Item;
+
+public interface ItemRepository extends CrudRepository<Item, Integer>{
+	
+}
