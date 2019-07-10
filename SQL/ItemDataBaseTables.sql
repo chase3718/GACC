@@ -4,7 +4,7 @@ use idb;
 
 create table item (
 	id 		int				primary key		auto_increment,
-    name	varchar(20)		not null,
+    name	varchar(50)		not null,
     sellin	int				not null,
     qaulity	int				not null
 );
